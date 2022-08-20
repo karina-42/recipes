@@ -6,7 +6,7 @@ const recipesRoutes = require('./routes/recipes')
 
 require('dotenv').config({path: './config/.env'})
 
-// connectDB()
+connectDB()
 
 app.set('view engine', 'ejs')
 app.use(express.static('public'))
