@@ -16,6 +16,10 @@ const RecipeSchema = new mongoose.Schema({
   steps: {
     type: Array,
     required: true
+  },
+  date: {
+    type: Date,
+    default: Date.now
   }
 })
 
