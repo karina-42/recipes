@@ -9,6 +9,15 @@ module.exports = {
       console.log(err);
     }
   },
+  getRecipe: async (req, res) => {
+    try {
+      // res.render('recipes.ejs', {recipes: recipeTitles})
+      console.log({recipes: recipeTitles})
+
+    } catch (err) {
+      console.log(err);
+    }
+  },
   addRecipe: async (req, res) => {
     try {
       await Recipe.create({recipe: req.body.recipe})

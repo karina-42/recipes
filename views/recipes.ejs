@@ -7,6 +7,14 @@
   <title>Document</title>
 </head>
 <body>
-  <h1>recipes</h1>
+  <h1>Recipes</h1>
+  <p>Click on a recipe title to see it</p>
+  <ul>
+    <% recipes.forEach(recipe => {%>
+      <li>
+        <button class="display-recipe"><%= recipe.recipeName.toUpperCase() %></button>
+      </li>
+    <% }) %>
+  </ul>
 </body>
 </html>
